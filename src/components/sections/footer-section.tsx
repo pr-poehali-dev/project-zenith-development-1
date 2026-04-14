@@ -72,6 +72,15 @@ export function FooterSection() {
             <div>
               <p className="text-muted-foreground text-sm mb-2 uppercase tracking-widest">Адрес</p>
               <p className="text-foreground text-base">ул. Ленина, 45, посёлок Октябрьский</p>
+              <a
+                href="https://yandex.ru/maps/?text=посёлок+Октябрьский+ул.+Ленина+45"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 text-sm text-primary hover:underline"
+                data-clickable
+              >
+                Как добраться →
+              </a>
             </div>
             <a
               href="https://wa.me/79515217770"
