@@ -72,6 +72,21 @@ export function InsightsSection() {
           ))}
         </div>
 
+        <motion.div
+          className="mt-10 text-center"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <a
+            href="/menu"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-primary/90 transition-colors"
+          >
+            Смотреть полное меню
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </motion.div>
+
         <AnimatePresence>
           {hoveredIndex !== null && (
             <motion.div

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
 const footerLinks = [
-  { label: "Меню", href: "#" },
+  { label: "Меню", href: "/menu" },
   { label: "Галерея", href: "#" },
   { label: "Цены", href: "#" },
   { label: "Контакты", href: "#" },
