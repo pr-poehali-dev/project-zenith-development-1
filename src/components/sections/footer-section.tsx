@@ -71,7 +71,7 @@ export function FooterSection() {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col gap-6">
             <div>
               <p className="text-muted-foreground text-sm mb-2 uppercase tracking-widest">Адрес</p>
-              <p className="text-foreground text-base">Напишите нам адрес вашего заведения</p>
+              <p className="text-foreground text-base">ул. Ленина, 45, посёлок Октябрьский</p>
             </div>
             <a
               href="https://wa.me/79515217770"
