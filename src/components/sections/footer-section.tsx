@@ -70,8 +70,9 @@ export function FooterSection() {
           {/* Contact block */}
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col gap-6">
             <div>
-              <p className="text-muted-foreground text-sm mb-2 uppercase tracking-widest">Адрес</p>
+              <p className="text-muted-foreground text-sm mb-2 uppercase tracking-widest">Адрес и режим работы</p>
               <p className="text-foreground text-base">ул. Ленина, 45, посёлок Октябрьский</p>
+              <p className="text-muted-foreground text-sm mt-1">Ежедневно 10:00 — 21:00, без перерывов и выходных</p>
               <a
                 href="https://yandex.ru/maps/?text=посёлок+Октябрьский+ул.+Ленина+45"
                 target="_blank"
