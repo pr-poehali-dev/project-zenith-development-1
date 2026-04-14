@@ -72,7 +72,7 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none z-10"
+        className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10 gap-6"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
@@ -80,6 +80,18 @@ export function HeroSection() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
           Пицца Печь <em className="italic">СоМо</em>.
         </h1>
+        <motion.a
+          href="https://wa.me/79515217770"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pointer-events-auto bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-medium hover:bg-primary/90 transition-colors shadow-lg"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+          data-clickable
+        >
+          Заказать сейчас
+        </motion.a>
       </motion.div>
 
       <motion.div

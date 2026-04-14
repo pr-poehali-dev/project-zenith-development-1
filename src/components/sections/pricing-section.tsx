@@ -68,15 +68,19 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full mt-8 py-3 px-6 rounded-lg font-medium transition-colors ${
+              <a
+                href="https://wa.me/79515217770"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block w-full mt-8 py-3 px-6 rounded-lg font-medium transition-colors text-center ${
                   plan.popular
                     ? "bg-primary text-primary-foreground hover:bg-primary/90"
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
+                data-clickable
               >
-                Сделать заказ
-              </button>
+                Заказать в WhatsApp
+              </a>
             </motion.div>
           ))}
         </div>

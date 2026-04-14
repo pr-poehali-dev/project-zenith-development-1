@@ -16,7 +16,7 @@ export function FooterSection() {
     <footer className="relative bg-background px-6 py-24 overflow-hidden">
       {/* Gradient blob */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-tr from-purple-300 via-purple-200 to-lime-200 opacity-40 blur-3xl rounded-full" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-green-300 via-green-200 to-emerald-200 opacity-30 blur-3xl rounded-full" />
       </div>
 
       <div className="relative max-w-6xl mx-auto">
@@ -48,27 +48,41 @@ export function FooterSection() {
                 </motion.a>
               ))}
             </nav>
-          </div>
 
-          {/* Email signup */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="text-muted-foreground text-sm mb-4">Оставьте номер телефона — перезвоним и примем заказ.</p>
-            <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
-              <input
-                type="tel"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="+7 (___) ___-__-__"
-                className="flex-1 bg-secondary border-0 rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <button
-                type="submit"
-                className="bg-foreground text-background p-3 rounded-lg hover:bg-foreground/90 transition-colors"
+            <motion.div
+              className="mt-8 flex flex-col gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
+              <a
+                href="tel:+79515217770"
+                className="text-foreground text-xl font-serif hover:text-primary transition-colors"
                 data-clickable
               >
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </form>
+                +7 (951) 521-77-70
+              </a>
+              <p className="text-muted-foreground text-sm">Ежедневно с 10:00 до 23:00</p>
+            </motion.div>
+          </div>
+
+          {/* Contact block */}
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col gap-6">
+            <div>
+              <p className="text-muted-foreground text-sm mb-2 uppercase tracking-widest">Адрес</p>
+              <p className="text-foreground text-base">Напишите нам адрес вашего заведения</p>
+            </div>
+            <a
+              href="https://wa.me/79515217770"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-4 rounded-xl font-medium hover:bg-primary/90 transition-colors text-center justify-center"
+              data-clickable
+            >
+              <ArrowRight className="w-5 h-5" />
+              Написать в WhatsApp
+            </a>
           </motion.div>
         </div>
 
