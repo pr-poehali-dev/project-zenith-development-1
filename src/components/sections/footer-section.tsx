@@ -3,10 +3,10 @@ import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
 const footerLinks = [
-  { label: "Шаблоны", href: "#" },
+  { label: "Меню", href: "#" },
   { label: "Галерея", href: "#" },
   { label: "Цены", href: "#" },
-  { label: "Войти", href: "#" },
+  { label: "Контакты", href: "#" },
 ]
 
 export function FooterSection() {
@@ -29,7 +29,7 @@ export function FooterSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              FOLIO.
+              Пицца Печь.
             </motion.h2>
 
             <nav className="flex flex-wrap gap-6 mt-8">
@@ -52,13 +52,13 @@ export function FooterSection() {
 
           {/* Email signup */}
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="text-muted-foreground text-sm mb-4">Получайте новости о шаблонах и обновлениях.</p>
+            <p className="text-muted-foreground text-sm mb-4">Оставьте номер телефона — перезвоним и примем заказ.</p>
             <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
               <input
-                type="email"
+                type="tel"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Введите email"
+                placeholder="+7 (___) ___-__-__"
                 className="flex-1 bg-secondary border-0 rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <button
@@ -73,7 +73,7 @@ export function FooterSection() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">2025 FOLIO. Все права защищены.</p>
+          <p className="text-muted-foreground text-sm">2025 Пицца Печь СоМо. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm" data-clickable>
               Конфиденциальность

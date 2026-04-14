@@ -3,18 +3,18 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Навынос",
+    price: "от 350",
+    period: " руб",
+    description: "Заберите заказ самостоятельно",
+    features: ["Пицца из дровяной печи", "Роллы и воки", "Бургеры и картошка фри", "Скидка 5% при онлайн-заказе"],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "В зале",
+    price: "от 400",
+    period: " руб",
+    description: "Уютная атмосфера для компании",
+    features: ["Всё меню без исключений", "Обслуживание за столиком", "Молочные коктейли", "Банкеты и мероприятия", "Заказ на всю компанию"],
     popular: true,
   },
 ]
@@ -29,8 +29,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Как вам удобнее?</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Едите у нас или берёте с собой — в любом случае вкусно.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Сделать заказ
               </button>
             </motion.div>
           ))}

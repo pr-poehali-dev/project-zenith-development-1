@@ -2,9 +2,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const showcaseImages = [
-  "/modern-architecture-building-exterior-minimal.jpg",
-  "/fashion-model-editorial-portrait-dramatic-lighting.jpg",
-  "/interior-design-minimalist-living-room-natural-lig.jpg",
+  "https://cdn.poehali.dev/projects/e57ad843-1223-490c-8753-37fd9c21e23f/files/63c41ef6-61c1-440a-9da5-26da219486d5.jpg",
+  "https://cdn.poehali.dev/projects/e57ad843-1223-490c-8753-37fd9c21e23f/files/ccb07490-8553-433c-89fb-2e2b47d68f76.jpg",
+  "https://cdn.poehali.dev/projects/e57ad843-1223-490c-8753-37fd9c21e23f/files/2a782339-6fb7-4b2c-9581-cdbf47cde476.jpg",
 ]
 
 export function ShowcaseSection() {
@@ -29,7 +29,7 @@ export function ShowcaseSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Галерея
+          Наши блюда
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">

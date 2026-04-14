@@ -5,24 +5,24 @@ import { ArrowRight } from "lucide-react"
 
 const articles = [
   {
-    title: "Искусство визуального сторителлинга",
-    category: "Дизайн",
-    image: "/visual-storytelling-design-article.jpg",
+    title: "Пицца Маргарита — классика навсегда",
+    category: "Пицца",
+    image: "https://cdn.poehali.dev/projects/e57ad843-1223-490c-8753-37fd9c21e23f/files/63c41ef6-61c1-440a-9da5-26da219486d5.jpg",
   },
   {
-    title: "Как создать личный бренд онлайн",
-    category: "Стратегия",
-    image: "/personal-branding-digital-marketing.jpg",
+    title: "Роллы и воки — Азия в каждом кусочке",
+    category: "Роллы и воки",
+    image: "https://cdn.poehali.dev/projects/e57ad843-1223-490c-8753-37fd9c21e23f/files/ccb07490-8553-433c-89fb-2e2b47d68f76.jpg",
   },
   {
-    title: "Тренды типографики 2025",
-    category: "Типографика",
-    image: "/typography-trends-modern-fonts.jpg",
+    title: "Сочный бургер с хрустящей картошкой фри",
+    category: "Бургеры",
+    image: "https://cdn.poehali.dev/projects/e57ad843-1223-490c-8753-37fd9c21e23f/files/d062a23f-d930-46ce-9dd7-d616bcdeeba2.jpg",
   },
   {
-    title: "Минимализм в дизайне портфолио",
-    category: "Вдохновение",
-    image: "/placeholder.svg?height=200&width=300",
+    title: "Молочные коктейли — десерт в стакане",
+    category: "Напитки",
+    image: "https://cdn.poehali.dev/projects/e57ad843-1223-490c-8753-37fd9c21e23f/files/15528df0-a2cf-4821-9d68-8090153b7193.jpg",
   },
 ]
 
@@ -43,7 +43,7 @@ export function InsightsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Статьи
+          Меню
         </motion.p>
 
         <div className="divide-y divide-border">
@@ -72,7 +72,6 @@ export function InsightsSection() {
           ))}
         </div>
 
-        {/* Floating hover image */}
         <AnimatePresence>
           {hoveredIndex !== null && (
             <motion.div
