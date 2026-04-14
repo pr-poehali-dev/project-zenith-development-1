@@ -92,6 +92,14 @@ export function HeroSection() {
         >
           Заказать сейчас
         </motion.a>
+        <motion.p
+          className="pointer-events-none text-sm text-foreground/60 mix-blend-difference"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1.5 }}
+        >
+          Ежедневно 10:00 — 21:00, без выходных
+        </motion.p>
       </motion.div>
 
       <motion.div
